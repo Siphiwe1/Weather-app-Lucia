@@ -65,7 +65,7 @@ color: #f65282;
     display: flex;
 }
 .weather-app-temperature{
-    font-size: 88px;
+    font-size: 60px;
     font-weight: bold;
     margin-left: 10px;
 }
