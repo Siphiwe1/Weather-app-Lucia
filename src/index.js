@@ -18,13 +18,19 @@ function refreshWeather(response){
     temperatureElement.innerHTML=Math.round(temperature);
     iconElement.innerHTML=`<img src"${response.data.condition.icon_url}"class="weather-app-icon"/>`;
             
-    console.log(response.data);
   
 }
 function formatDate(date){
     let minutes= date.getMinutes();
     let hours= date.getHours();
-    let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let days=[
+        "Sunday", 
+        "Monday",
+         "Tuesday", 
+         "Wednesday", 
+         "Thursday", 
+         "Friday", 
+         "Saturday"];
     let day = days[date.getDay()];
 
 
@@ -37,7 +43,8 @@ return`${day} ${hours}:${minutes}`;
 function searchCity (city){
     let apiKey = "4bef39f46ffb7o39t6446dac03e1804a";
     let apiUrl =`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(refreshWeather);
+    console.log(apiUrl);
+    axios.get(apiUrl).then(city);
 }
 
 
