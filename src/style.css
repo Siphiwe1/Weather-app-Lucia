@@ -5,9 +5,16 @@ body {
   a {
     color: #885df1;
   }
-  
+  .weather-app {
+    background: #cdb6c0;
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  }
   header {
-    border-bottom: 1px solid #a0a1a0;
+    border-bottom: 1px solid #aa6065;
     padding: 0 0 27px 0;
   }
   #form-enterCity {
@@ -20,7 +27,7 @@ body {
   }
   
   #form-searchButton {
-    background-color: #5c715e;
+    background-color: rgb(83, 13, 33);
     width: 15%;
     margin-left: 4px;
     padding: 14px 24px;
@@ -52,7 +59,7 @@ body {
   }
   
   .weather-app-details strong {
-    color: #5c715e;
+    color: lightcoral;
     font-weight: 600;
   }
   
@@ -112,9 +119,8 @@ body {
   }
   
   footer {
-    border-top: 1px solid #a0a1a0;
+    border-top: 1px solid lightcoral;
     padding: 25px 0 0 0;
     text-align: center;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
-  }
+    color: rgb(83, 13, 33);
