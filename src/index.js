@@ -100,3 +100,4 @@ function refreshWeather(response) {
   
   searchCity("Springs");
   
+  displayForecast();
